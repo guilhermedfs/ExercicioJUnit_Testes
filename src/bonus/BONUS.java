@@ -1,7 +1,9 @@
 package bonus;
 
 public class BONUS{
-	int sales[] = null, maxSales = 0,  salary[] = null;
+	int sales[] = null;
+	static int maxSales = 0;
+	int salary[] = null;
 	static boolean found;
 	static int linc = 100;
 	static int sinc = 200;
@@ -15,7 +17,7 @@ public class BONUS{
     int eSize = 0, dSize = 0;
     String emptabdept[], depttabdept[];
 
-	public static int calculaSalary(int maxSales, int sales[], String emptabdept[], String depttabdept[], char code[], int []salary, int dSize, int eSize){
+	public static int calculaSalary(int sales[], String emptabdept[], String depttabdept[], char code[], int []salary, int dSize, int eSize){
 
     	errCode = 0;
     	if(eSize <= 0 | dSize <= 0) {
@@ -44,8 +46,9 @@ public class BONUS{
     			}
     		}
     	}
+    	
     	return errCode;
     }
-
+	
 
 }

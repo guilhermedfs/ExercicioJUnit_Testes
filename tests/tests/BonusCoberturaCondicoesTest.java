@@ -12,7 +12,7 @@ public class BonusCoberturaCondicoesTest extends TestCase{
 		int eSize = 0;
 		int dSize = 0;
 		int RetornoEsperado = 1;
-		int RetornoFeito = BONUS.calculaSalary(3, sales, emptab, depttab, code, salary, eSize, dSize);
+		int RetornoFeito = BONUS.calculaSalary(sales, emptab, depttab, code, salary, eSize, dSize);
 		
 		assertEquals(RetornoEsperado, RetornoFeito, 0);
 	}
@@ -26,7 +26,7 @@ public class BonusCoberturaCondicoesTest extends TestCase{
 		int eSize = 3;
 		int dSize = 3;
 		int RetornoEsperado = 2;
-		int RetornoFeito = BONUS.calculaSalary(3, sales, emptab, depttab, code, salary, eSize, dSize);
+		int RetornoFeito = BONUS.calculaSalary(sales, emptab, depttab, code, salary, eSize, dSize);
 		
 		assertEquals(RetornoEsperado, RetornoFeito, 0);
 	}
